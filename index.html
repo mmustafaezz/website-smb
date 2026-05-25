@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SMB Ventures — Modern Muslim Essentials | Sepakat Membawa Berkat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<!-- GSAP for scroll animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- VanillaTilt for 3D tilt effect -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+<!-- Typed.js for hero headline cycling -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-batik">
+
+<!-- ============ PAGE-WIDE BATIK BACKDROP ============ -->
+<svg class="batik-bg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="batik-pattern" x="0" y="0" width="170" height="170" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#c9a96e" stroke-width="0.55">
+        <circle cx="85" cy="85" r="40"/>
+        <circle cx="85" cy="85" r="28"/>
+        <circle cx="85" cy="85" r="16"/>
+      </g>
+      <circle cx="85" cy="85" r="5.5" fill="#c9a96e"/>
+      <g stroke="#e6cea0" stroke-width="0.4">
+        <line x1="85" y1="45" x2="85" y2="53"/>
+        <line x1="85" y1="117" x2="85" y2="125"/>
+        <line x1="45" y1="85" x2="53" y2="85"/>
+        <line x1="117" y1="85" x2="125" y2="85"/>
+      </g>
+      <g fill="#e6cea0">
+        <circle cx="85" cy="28" r="3"/>
+        <circle cx="85" cy="142" r="3"/>
+        <circle cx="28" cy="85" r="3"/>
+        <circle cx="142" cy="85" r="3"/>
+      </g>
+      <g fill="#a88a4f">
+        <circle cx="0" cy="0" r="1.5"/>
+        <circle cx="170" cy="0" r="1.5"/>
+        <circle cx="0" cy="170" r="1.5"/>
+        <circle cx="170" cy="170" r="1.5"/>
+      </g>
+      <g fill="#c9a96e" opacity="0.7">
+        <circle cx="42" cy="42" r="1"/>
+        <circle cx="128" cy="42" r="1"/>
+        <circle cx="42" cy="128" r="1"/>
+        <circle cx="128" cy="128" r="1"/>
+      </g>
+      <g stroke="#c9a96e" stroke-width="0.3" fill="none" opacity="0.5">
+        <path d="M0 85 Q21 75 42 85 T 85 85"/>
+        <path d="M85 85 Q106 95 127 85 T 170 85"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect x="-15%" y="-15%" width="130%" height="130%" fill="url(#batik-pattern)"/>
+</svg>
+
+<!-- ============ NAVIGATION ============ -->
+<nav id="navbar">
+  <a href="index.html" class="logo">
+    <img src="logo.jpg" alt="SMB Ventures Sdn Bhd" class="logo-img"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+    <span class="logo-fallback" style="display:none;">
+      <span class="lf-main">s<em>m</em>b</span>
+      <span class="lf-tag">sepakat membawa berkat</span>
+      <span class="lf-sub">Ventures Sdn Bhd</span>
+    </span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="produk.html">Produk</a></li>
+    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+    <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+  </ul>
+  <a href="produk.html" class="nav-cta"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Beli Sekarang</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="produk.html">Produk</a></li>
+    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+    <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+    <li><a href="produk.html" class="nav-cta"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Beli Sekarang</a></li>
+  </ul>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+<video autoplay muted loop playsinline class="hero-video-bg">
+  <source src="hero-bg.mp4" type="video/mp4">
+</video>
+<video autoplay muted loop playsinline class="hero-anim-bg">
+  <source src="hero-animation.mp4" type="video/mp4">
+</video>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Sepakat · Membawa · Berkat</div>
+    <h1><em id="hero-typed" aria-label="Keindahan">Keindahan</em> Gaya Muslim Moden</h1>
+    <p>SMB Ventures membawakan koleksi produk Muslim moden yang menggabungkan keselesaan, gaya dan kualiti untuk kegunaan harian anda. Dari kopiah hingga kelengkapan ibadah — semua tersedia untuk melengkapkan gaya hidup anda.</p>
+    <div class="hero-actions">
+      <a href="produk.html" class="btn btn-primary">
+        Lihat Koleksi
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="tentang-kami.html" class="btn btn-ghost">Kisah Kami</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="num">100+</div>
+        <div class="label">Products</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">1998</div>
+        <div class="label">Since</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">4.8★</div>
+        <div class="label">Rating Pelanggan</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card hero-card-side1">
+      <img src="hero-side-1.jpg" alt="Koleksi Gaya Muslim" class="hero-card-img"
+           onerror="this.style.display='none';this.parentElement.querySelector('.pattern').style.display='flex';">
+      <div class="pattern">۞</div>
+    </div>
+    <div class="hero-card hero-card-main">
+      <img src="hero-main.jpg" alt="Koleksi Ibadah Premium" class="hero-card-img"
+           onerror="this.style.display='none';this.parentElement.querySelector('.pattern').style.display='flex';">
+      <div class="pattern">﷽</div>
+    </div>
+    <div class="hero-card hero-card-side2">
+      <img src="hero-side-2.jpg" alt="Lifestyle Muslim Moden" class="hero-card-img"
+           onerror="this.style.display='none';this.parentElement.querySelector('.pattern').style.display='flex';">
+      <div class="pattern">٭</div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ BENEFITS ============ -->
+<section class="benefits" aria-labelledby="benefits-heading">
+  <h2 id="benefits-heading" class="visually-hidden">Kelebihan SMB Ventures</h2>
+  <div class="benefits-grid">
+    <div class="benefit-card reveal">
+      <div class="benefit-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/><path d="M9 12l2 2 4-4"/></svg>
+      </div>
+      <h3>Kualiti Terjamin</h3>
+      <p>Setiap produk diperiksa sebelum penghantaran.</p>
+    </div>
+    <div class="benefit-card reveal">
+      <div class="benefit-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+      </div>
+      <h3>Penghantaran ke Seluruh Malaysia</h3>
+      <p>Pantas dan selamat sampai ke pintu rumah anda.</p>
+    </div>
+    <div class="benefit-card reveal">
+      <div class="benefit-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      </div>
+      <h3>Pilihan Lengkap</h3>
+      <p>Dari kopiah hingga kelengkapan umrah — semua dalam satu tempat.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIAL ============ -->
+<section class="testimonial-strip">
+  <div class="reveal">
+    <blockquote>Produk sangat berkualiti dan selesa dipakai. Penghantaran cepat, pembungkusan pun kemas.</blockquote>
+    <cite>— Pelanggan SMB Ventures</cite>
+  </div>
+</section>
+
+<!-- ============ MARKETPLACE STRIP ============ -->
+<section class="marketplace-strip" aria-labelledby="marketplace-heading">
+  <div class="section-header">
+    <div class="section-eyebrow">Tersedia Di</div>
+    <h2 id="marketplace-heading" class="section-title">Juga boleh beli di <em>platform pilihan</em>.</h2>
+    <p class="section-sub">Kami tersedia di TikTok Shop, Shopee dan Lazada — pilih platform yang anda paling selesa.</p>
+  </div>
+  <div class="marketplace-grid">
+    <a href="https://www.tiktok.com/" class="marketplace-tile reveal" data-platform="tiktok" target="_blank" rel="noopener" aria-label="Beli di TikTok Shop">
+      <div class="marketplace-tile-icon" style="background:#000000;border-radius:22px;">
+        <img src="tiktok logo.jpg" alt="TikTok" width="36" height="36" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">
+      </div>
+      <h3>TikTok Shop</h3>
+      <p>Beli & ikut di TikTok</p>
+      <span class="marketplace-arrow" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+    <a href="https://shopee.com.my/" class="marketplace-tile reveal" data-platform="shopee" target="_blank" rel="noopener" aria-label="Beli di Shopee">
+      <div class="marketplace-tile-icon" style="background:#EE4D2D;border-radius:22px;">
+        <img src="shopee logo.jpg" alt="Shopee" width="36" height="36" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">
+      </div>
+      <h3>Shopee</h3>
+      <p>Beli di kedai Shopee kami</p>
+      <span class="marketplace-arrow" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+    <a href="https://www.lazada.com.my/" class="marketplace-tile reveal" data-platform="lazada" target="_blank" rel="noopener" aria-label="Beli di Lazada">
+      <div class="marketplace-tile-icon" style="background:#1A1464;border-radius:22px;">
+        <img src="lazada logo.jpg" alt="Lazada" width="36" height="36" style="width:100%;height:100%;object-fit:cover;border-radius:18px;">
+      </div>
+      <h3>Lazada</h3>
+      <p>Lawati kedai Lazada kami</p>
+      <span class="marketplace-arrow" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section>
+  <div class="cta-banner reveal">
+  <img class="cta-banner-img" src="cta-bg.jpg" alt="" aria-hidden="true">
+    <h2>Bersama, kita cipta <em>gaya</em>.</h2>
+    <p>Jelajahi koleksi penuh produk Muslim moden kami dan dapatkan apa yang anda perlukan dalam satu tempat.</p>
+    <a href="produk.html" class="btn btn-primary">
+      Lihat Semua Produk
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="SMB Ventures Sdn Bhd" class="logo-img"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <span class="logo-fallback" style="display:none;">
+          <span class="lf-main">s<em>m</em>b</span>
+          <span class="lf-tag">sepakat membawa berkat</span>
+          <span class="lf-sub">Ventures Sdn Bhd</span>
+        </span>
+      </a>
+      <p>Koleksi produk Muslim moden untuk gaya hidup harian anda.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigasi</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produk.html">Koleksi Produk</a></li>
+        <li><a href="tentang-kami.html">Tentang Kami</a></li>
+        <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+        <li><a href="hubungi-kami.html#faq">Soalan Lazim</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hubungi</h4>
+      <ul>
+        <li><a href="https://wa.me/60139835152" target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.417.636 4.786 1.846 6.876L2 30l7.333-1.818A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.54 11.54 0 0 1-5.888-1.607l-.422-.252-4.352 1.08 1.1-4.24-.276-.435A11.56 11.56 0 0 1 4.4 16C4.4 9.59 9.59 4.4 16 4.4S27.6 9.59 27.6 16 22.41 27.6 16 27.6zm6.338-8.664c-.347-.174-2.056-1.014-2.375-1.13-.318-.115-.55-.173-.78.174-.23.347-.895 1.13-1.097 1.362-.202.23-.404.26-.75.086-.347-.174-1.464-.54-2.788-1.72-1.03-.918-1.726-2.053-1.928-2.4-.202-.347-.022-.534.152-.706.156-.155.347-.405.52-.607.174-.202.23-.347.347-.578.116-.23.058-.434-.029-.607-.087-.174-.78-1.88-1.07-2.573-.28-.676-.566-.584-.78-.595l-.665-.011c-.23 0-.607.086-.924.433-.318.347-1.213 1.186-1.213 2.892 0 1.706 1.242 3.355 1.415 3.585.174.23 2.445 3.73 5.923 5.232.828.357 1.474.57 1.977.73.83.265 1.587.228 2.184.138.666-.1 2.056-.84 2.345-1.652.29-.81.29-1.505.202-1.652-.087-.144-.318-.23-.665-.404z"/></svg>
+          WhatsApp: +60 13-983 5152
+        </a></li>
+        <li><a href="mailto:hello@smbventures.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          hello@smbventures.com
+        </a></li>
+        <li><a href="tel:+60139835152">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +60 13-983 5152
+        </a></li>
+        <li><a href="hubungi-kami.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Jerantut, Pahang, Malaysia
+        </a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>&copy; 2026 SMB Ventures. All rights reserved.</div>
+    <div class="made-with">Dibina dengan penuh dedikasi <span>۞</span></div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOATING ============ -->
+<a href="https://wa.me/60139835152?text=Assalamualaikum%20SMB%20Ventures%2C%20saya%20berminat%20dengan%20produk%20anda."
+   class="whatsapp-float"
+   id="whatsappBtn"
+   target="_blank"
+   rel="noopener"
+   aria-label="Hubungi melalui WhatsApp">
+  <span class="whatsapp-tooltip">Hubungi kami</span>
+  <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.417.636 4.786 1.846 6.876L2 30l7.333-1.818A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.54 11.54 0 0 1-5.888-1.607l-.422-.252-4.352 1.08 1.1-4.24-.276-.435A11.56 11.56 0 0 1 4.4 16C4.4 9.59 9.59 4.4 16 4.4S27.6 9.59 27.6 16 22.41 27.6 16 27.6zm6.338-8.664c-.347-.174-2.056-1.014-2.375-1.13-.318-.115-.55-.173-.78.174-.23.347-.895 1.13-1.097 1.362-.202.23-.404.26-.75.086-.347-.174-1.464-.54-2.788-1.72-1.03-.918-1.726-2.053-1.928-2.4-.202-.347-.022-.534.152-.706.156-.155.347-.405.52-.607.174-.202.23-.347.347-.578.116-.23.058-.434-.029-.607-.087-.174-.78-1.88-1.07-2.573-.28-.676-.566-.584-.78-.595l-.665-.011c-.23 0-.607.086-.924.433-.318.347-1.213 1.186-1.213 2.892 0 1.706 1.242 3.355 1.415 3.585.174.23 2.445 3.73 5.923 5.232.828.357 1.474.57 1.977.73.83.265 1.587.228 2.184.138.666-.1 2.056-.84 2.345-1.652.29-.81.29-1.505.202-1.652-.087-.144-.318-.23-.665-.404z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>

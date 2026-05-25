@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Produk — SMB Ventures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "SMB Ventures Product Collection",
+  "description": "Premium Islamic products for modern Muslims",
+  "url": "https://smbventures.com/produk.html",
+  "brand": {
+    "@type": "Brand",
+    "name": "SMB Ventures"
+  }
+}
+</script>
+</head>
+<body>
+<!-- Diagonal Check Batik Background -->
+<svg class="batik-check-bg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="check-batik" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse" patternTransform="rotate(45 400 400)">
+      <line x1="40" y1="0" x2="40" y2="80" stroke="#c9a96e" stroke-width="0.6"/>
+      <line x1="0" y1="40" x2="80" y2="40" stroke="#c9a96e" stroke-width="0.6"/>
+      <circle cx="0"  cy="0"  r="2.5" fill="#c9a96e"/>
+      <circle cx="80" cy="0"  r="2.5" fill="#c9a96e"/>
+      <circle cx="0"  cy="80" r="2.5" fill="#c9a96e"/>
+      <circle cx="80" cy="80" r="2.5" fill="#c9a96e"/>
+      <circle cx="40" cy="40" r="6" fill="none" stroke="#c9a96e" stroke-width="0.7"/>
+      <circle cx="40" cy="40" r="3" fill="#c9a96e"/>
+      <line x1="34" y1="40" x2="46" y2="40" stroke="#e6cea0" stroke-width="0.5"/>
+      <line x1="40" y1="34" x2="40" y2="46" stroke="#e6cea0" stroke-width="0.5"/>
+      <polygon points="40,26 54,40 40,54 26,40" fill="none" stroke="#c9a96e" stroke-width="0.45" opacity="0.7"/>
+      <circle cx="40" cy="27" r="1.2" fill="#e6cea0" opacity="0.8"/>
+      <circle cx="53" cy="40" r="1.2" fill="#e6cea0" opacity="0.8"/>
+      <circle cx="40" cy="53" r="1.2" fill="#e6cea0" opacity="0.8"/>
+      <circle cx="27" cy="40" r="1.2" fill="#e6cea0" opacity="0.8"/>
+      <path d="M0 20 Q20 20 20 0"   fill="none" stroke="#a88a4f" stroke-width="0.4" opacity="0.6"/>
+      <path d="M60 0 Q60 20 80 20"  fill="none" stroke="#a88a4f" stroke-width="0.4" opacity="0.6"/>
+      <path d="M80 60 Q60 60 60 80" fill="none" stroke="#a88a4f" stroke-width="0.4" opacity="0.6"/>
+      <path d="M20 80 Q20 60 0 60"  fill="none" stroke="#a88a4f" stroke-width="0.4" opacity="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#check-batik)"/>
+</svg>
+
+<!-- ============ NAVIGATION ============ -->
+<nav id="navbar">
+  <a href="index.html" class="logo">
+    <img src="logo.jpg" alt="SMB Ventures Sdn Bhd" class="logo-img"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+    <span class="logo-fallback" style="display:none;">
+      <span class="lf-main">s<em>m</em>b</span>
+      <span class="lf-tag">sepakat membawa berkat</span>
+      <span class="lf-sub">Ventures Sdn Bhd</span>
+    </span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="produk.html" class="active">Produk</a></li>
+    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+    <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+  </ul>
+  <a href="produk.html" class="nav-cta"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Beli Sekarang</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="produk.html">Produk</a></li>
+    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+    <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+    <li><a href="produk.html" class="nav-cta"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Beli Sekarang</a></li>
+  </ul>
+</div>
+
+<!-- ============ PAGE HEADER ============ -->
+<header class="page-header">
+  <div class="section-eyebrow">Kategori Produk</div>
+  <h1>Pilihan dengan <em>dedikasi</em>.</h1>
+  <p>Terokai 16 kategori produk Muslim moden kami — pilih kategori untuk lihat semua produk di dalamnya.</p>
+</header>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="products" id="produk">
+
+  <div class="product-grid">
+
+    <!-- 1. Kopiah & Headwear -->
+    <article class="product-card" data-product="Kopiah & Headwear" data-price="45">
+      <div class="product-image">
+        <div class="product-badge">Best Seller</div>
+        <div class="stock-badge stock-ready">Pelbagai Varian</div>
+        <img src="product-kopiah.jpg" alt="Kopiah & Headwear" class="product-img" loading="lazy" onerror="this.style.display='none';">
+        <svg class="product-icon" viewBox="0 0 120 120" fill="none">
+          <defs><linearGradient id="kg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a88a4f"/><stop offset="1" stop-color="#c9a96e"/></linearGradient></defs>
+          <ellipse cx="60" cy="88" rx="44" ry="8" fill="url(#kg)" opacity="0.85"/>
+          <path d="M16 88 C16 56, 36 36, 60 36 C84 36, 104 56, 104 88 Z" fill="url(#kg)"/>
+          <path d="M22 80 C22 56, 38 42, 60 42 C82 42, 98 56, 98 80" stroke="#fff" stroke-width="1" fill="none" opacity="0.5"/>
+          <path d="M30 74 Q60 64 90 74" stroke="#fff" stroke-width="0.8" fill="none" opacity="0.4"/>
+          <path d="M30 68 Q60 58 90 68" stroke="#fff" stroke-width="0.8" fill="none" opacity="0.4"/>
+          <path d="M34 60 Q60 52 86 60" stroke="#fff" stroke-width="0.8" fill="none" opacity="0.4"/>
+          <circle cx="60" cy="40" r="3" fill="#fff" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Kopiah & Headwear</h3>
+        <p class="product-desc">Koleksi kopiah moden dengan material selesa dan rekaan premium untuk kegunaan harian dan ibadah.</p>
+        <button class="product-cta">Terokai Kategori <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      </div>
+    </article>
+
+    <!-- 2. Jubah -->
+    <article class="product-card" data-product="Jubah" data-price="99">
+      <div class="product-image">
+        <div class="product-badge">Premium</div>
+        <div class="stock-badge stock-ready">Pelbagai Varian</div>
+        <img src="product-jubah.jpg" alt="Jubah" class="product-img" loading="lazy" onerror="this.style.display='none';">
+        <svg class="product-icon" viewBox="0 0 120 120" fill="none">
+          <defs><linearGradient id="jg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9a96e"/><stop offset="1" stop-color="#a88a4f"/></linearGradient></defs>
+          <path d="M30 24 L48 18 L60 30 L72 18 L90 24 L92 38 L78 34 L78 110 L42 110 L42 34 L28 38 Z" fill="url(#jg)"/>
+          <path d="M30 24 L18 52 L22 56 L34 32 Z" fill="url(#jg)"/>
+          <path d="M90 24 L102 52 L98 56 L86 32 Z" fill="url(#jg)"/>
+          <path d="M48 18 L60 30 L72 18" stroke="#fff" stroke-width="0.7" opacity="0.55" fill="none"/>
+          <line x1="60" y1="30" x2="60" y2="106" stroke="#fff" stroke-width="0.5" opacity="0.35"/>
+          <circle cx="60" cy="46" r="1.5" fill="#fff" opacity="0.6"/>
+          <circle cx="60" cy="60" r="1.5" fill="#fff" opacity="0.6"/>
+          <circle cx="60" cy="74" r="1.5" fill="#fff" opacity="0.6"/>
+          <circle cx="60" cy="88" r="1.5" fill="#fff" opacity="0.6"/>
+          <path d="M52 22 L68 22" stroke="#fff" stroke-width="0.5" opacity="0.4"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Jubah</h3>
+        <p class="product-desc">Jubah Muslim moden dengan kain berkualiti dan rekaan elegan untuk kegunaan harian dan majlis rasmi.</p>
+        <button class="product-cta">Terokai Kategori <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      </div>
+    </article>
+
+    <!-- 3. Kain Pelikat -->
+    <article class="product-card" data-product="Kain Pelikat" data-price="29">
+      <div class="product-image">
+        <div class="product-badge">Trending</div>
+        <div class="stock-badge stock-ready">Pelbagai Varian</div>
+        <img src="product-pelikat.jpg" alt="Kain Pelikat" class="product-img" loading="lazy" onerror="this.style.display='none';">
+        <svg class="product-icon" viewBox="0 0 120 120" fill="none">
+          <defs><linearGradient id="pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9a96e"/><stop offset="1" stop-color="#a88a4f"/></linearGradient></defs>
+          <rect x="26" y="14" width="68" height="92" rx="4" fill="url(#pg)"/>
+          <line x1="40" y1="14" x2="40" y2="106" stroke="#fff" stroke-width="0.6" opacity="0.5"/>
+          <line x1="54" y1="14" x2="54" y2="106" stroke="#fff" stroke-width="0.6" opacity="0.5"/>
+          <line x1="68" y1="14" x2="68" y2="106" stroke="#fff" stroke-width="0.6" opacity="0.5"/>
+          <line x1="82" y1="14" x2="82" y2="106" stroke="#fff" stroke-width="0.6" opacity="0.5"/>
+          <line x1="26" y1="36" x2="94" y2="36" stroke="#fff" stroke-width="0.6" opacity="0.5"/>
+          <line x1="26" y1="60" x2="94" y2="60" stroke="#fff" stroke-width="0.6" opacity="0.5"/>
+          <line x1="26" y1="84" x2="94" y2="84" stroke="#fff" stroke-width="0.6" opacity="0.5"/>
+          <rect x="26" y="14" width="68" height="4" fill="#fff" opacity="0.3"/>
+          <rect x="26" y="102" width="68" height="4" fill="#fff" opacity="0.3"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Kain Pelikat</h3>
+        <p class="product-desc">Pelikat instant dan tradisional dengan pinggang bergetah serta material selesa dipakai sepanjang hari.</p>
+        <button class="product-cta">Terokai Kategori <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      </div>
+    </article>
+
+    <!-- 4. Tudung -->
+    <article class="product-card" data-product="Tudung" data-price="39">
+      <div class="product-image">
+        <div class="product-badge">Eksklusif</div>
+        <div class="stock-badge stock-ready">Pelbagai Varian</div>
+        <img src="product-tudung.jpg" alt="Tudung" class="product-img" loading="lazy" onerror="this.style.display='none';">
+        <svg class="product-icon" viewBox="0 0 120 120" fill="none">
+          <defs><linearGradient id="tlg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6cea0"/><stop offset="1" stop-color="#a88a4f"/></linearGradient></defs>
+          <path d="M60 14 C38 14, 22 30, 22 52 L22 110 L98 110 L98 52 C98 30, 82 14, 60 14 Z" fill="url(#tlg)"/>
+          <ellipse cx="60" cy="48" rx="14" ry="17" fill="#fbf8f3"/>
+          <ellipse cx="60" cy="48" rx="15" ry="18" stroke="#fff" stroke-width="0.7" fill="none" opacity="0.6"/>
+          <line x1="22" y1="96" x2="98" y2="96" stroke="#fff" stroke-width="0.7" opacity="0.5"/>
+          <line x1="22" y1="102" x2="98" y2="102" stroke="#fff" stroke-width="0.7" opacity="0.4"/>
+          <g opacity="0.4" fill="#fff">
+            <circle cx="36" cy="78" r="1.5"/>
+            <circle cx="84" cy="78" r="1.5"/>
+            <circle cx="60" cy="82" r="1.5"/>
+            <circle cx="44" cy="86" r="1.2"/>
+            <circle cx="76" cy="86" r="1.2"/>
+          </g>
+        </svg>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Tudung</h3>
+        <p class="product-desc">Koleksi tudung moden dengan kain berkualiti dan reka bentuk anggun untuk Muslimah masa kini.</p>
+        <button class="product-cta">Terokai Kategori <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      </div>
+    </article>
+
+    <!-- 5. Set Solat -->
+    <article class="product-card" data-product="Set Solat" data-price="65">
+      <div class="product-image">
+        <div class="product-badge">Pilihan Ramai</div>
+        <div class="stock-badge stock-ready">Pelbagai Varian</div>
+        <img src="product-set-solat.jpg" alt="Set Solat" class="product-img" loading="lazy" onerror="this.style.display='none';">
+        <svg class="product-icon" viewBox="0 0 120 120" fill="none">
+          <defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9a96e"/><stop offset="1" stop-color="#a88a4f"/></linearGradient></defs>
+          <rect x="22" y="20" width="76" height="84" rx="4" fill="url(#sg)"/>
+          <path d="M60 36 C44 36, 34 50, 34 64 L34 76 L86 76 L86 64 C86 50, 76 36, 60 36 Z" stroke="#fff" stroke-width="1" fill="none" opacity="0.6"/>
+          <path d="M60 44 C50 44, 42 54, 42 66 L42 72 L78 72 L78 66 C78 54, 70 44, 60 44 Z" stroke="#fff" stroke-width="0.8" fill="none" opacity="0.5"/>
+          <circle cx="60" cy="62" r="3" fill="#fff" opacity="0.6"/>
+          <rect x="22" y="20" width="76" height="6" fill="#fff" opacity="0.2"/>
+          <rect x="22" y="98" width="76" height="6" fill="#fff" opacity="0.2"/>
+          <line x1="30" y1="84" x2="90" y2="84" stroke="#fff" stroke-width="0.6" opacity="0.4"/>
+          <line x1="30" y1="90" x2="90" y2="90" stroke="#fff" stroke-width="0.6" opacity="0.4"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Set Solat</h3>
+        <p class="product-desc">Set lengkap untuk solat harian — sejadah, telekung dan aksesori ibadah berkualiti dalam satu pakej.</p>
+        <button class="product-cta">Terokai Kategori <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      </div>
+    </article>
+
+    <!-- 6. Baju Kedah -->
+    <article class="product-card" data-product="Baju Kedah" data-price="49">
+      <div class="product-image">
+        <div class="product-badge">New Arrival</div>
+        <div class="stock-badge stock-ready">Pelbagai Varian</div>
+        <img src="product-baju-kedah.jpg" alt="Baju Kedah" class="product-img" loading="lazy" onerror="this.style.display='none';">
+        <svg class="product-icon" viewBox="0 0 120 120" fill="none">
+          <defs><linearGradient id="bkg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9a96e"/><stop offset="1" stop-color="#a88a4f"/></linearGradient></defs>
+          <path d="M30 28 L48 22 L60 30 L72 22 L90 28 L92 42 L78 38 L78 104 L42 104 L42 38 L28 42 Z" fill="url(#bkg)"/>
+          <path d="M30 28 L20 50 L24 54 L34 32 Z" fill="url(#bkg)"/>
+          <path d="M90 28 L100 50 L96 54 L86 32 Z" fill="url(#bkg)"/>
+          <rect x="52" y="20" width="16" height="10" rx="2" fill="url(#bkg)"/>
+          <line x1="60" y1="20" x2="60" y2="30" stroke="#fff" stroke-width="0.5" opacity="0.5"/>
+          <line x1="60" y1="30" x2="60" y2="58" stroke="#fff" stroke-width="0.5" opacity="0.4"/>
+          <circle cx="60" cy="38" r="1.5" fill="#fff" opacity="0.7"/>
+          <circle cx="60" cy="46" r="1.5" fill="#fff" opacity="0.7"/>
+          <circle cx="60" cy="54" r="1.5" fill="#fff" opacity="0.7"/>
+          <rect x="68" y="62" width="11" height="14" rx="1" fill="#fff" opacity="0.12"/>
+          <line x1="68" y1="68" x2="79" y2="68" stroke="#fff" stroke-width="0.4" opacity="0.4"/>
+          <path d="M42 38 Q60 35 78 38" stroke="#fff" stroke-width="0.4" opacity="0.4" fill="none"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Baju Kedah</h3>
+        <p class="product-desc">Baju Kedah moden dengan jahitan kemas dan fabrik selesa — pilihan klasik untuk lelaki Muslim.</p>
+        <button class="product-cta">Terokai Kategori <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      </div>
+    </article>
+
+    <!-- 7. Baju Melayu dan Kurta -->
+    <article class="product-card" data-product="Baju Melayu dan Kurta" data-price="79">
+      <div class="product-image">
+        <div class="product-badge">Hot Item</div>
+        <div class="stock-badge stock-ready">Pelbagai Varian</div>
+        <img src="product-baju-melayu.jpg" alt="Baju Melayu dan Kurta" class="product-img" loading="lazy" onerror="this.style.display='none';">
+        <svg class="product-icon" viewBox="0 0 120 120" fill="none">
+          <defs><linearGradient id="bmg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6cea0"/><stop offset="1" stop-color="#a88a4f"/></linearGradient></defs>
+          <path d="M30 18 L46 12 L60 22 L74 12 L90 18 L92 32 L78 28 L78 68 L42 68 L42 28 L28 32 Z" fill="url(#bmg)"/>
+          <path d="M30 18 L22 40 L26 44 L34 22 Z" fill="url(#bmg)"/>
+          <path d="M90 18 L98 40 L94 44 L86 22 Z" fill="url(#bmg)"/>
+          <rect x="54" y="10" width="12" height="10" rx="2" fill="url(#bmg)"/>
+          <line x1="60" y1="10" x2="60" y2="22" stroke="#fff" stroke-width="0.4" opacity="0.5"/>
+          <line x1="60" y1="22" x2="60" y2="48" stroke="#fff" stroke-width="0.4" opacity="0.4"/>
+          <circle cx="60" cy="30" r="1.3" fill="#fff" opacity="0.6"/>
+          <circle cx="60" cy="38" r="1.3" fill="#fff" opacity="0.6"/>
+          <circle cx="60" cy="46" r="1.3" fill="#fff" opacity="0.6"/>
+          <path d="M42 68 L78 68 L78 76 L74 110 L64 110 L62 80 L58 80 L56 110 L46 110 L42 76 Z" fill="url(#bmg)"/>
+          <rect x="40" y="66" width="40" height="6" fill="#c9a96e" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Baju Melayu dan Kurta</h3>
+        <p class="product-desc">Baju melayu lengkap dan kurta moden dengan rekaan elegan untuk majlis rasmi dan ibadah harian.</p>
+        <button class="product-cta">Terokai Kategori <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      </div>
+    </article>
+
+    <!-- 8. Kelengkapan Haji & Umrah -->
+    <article class="product-card" data-product="Kelengkapan Haji & Umrah" data-price="199">
+      <div class="product-image">
+        <div class="product-badge">Essential</div>
+        <div class="stock-badge stock-ready">Pelbagai Varian</div>
+        <img src="product-haji.jpg" alt="Kelengkapan Haji & Umrah" class="product-img" loading="lazy" onerror="this.style.display='none';">
+        <svg class="product-icon" viewBox="0 0 120 120" fill="none">
+          <defs><linearGradient id="hg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d2340"/><stop offset="1" stop-color="#081830"/></linearGradient></defs>
+          <ellipse cx="60" cy="104" rx="44" ry="5" fill="#c9a96e" opacity="0.28"/>
+          <rect x="34" y="38" width="52" height="64" fill="url(#hg)"/>
+          <rect x="34" y="54" width="52" height="7" fill="#c9a96e"/>
+          <rect x="68" y="76" width="14" height="26" fill="#c9a96e"/>
+          <rect x="70" y="78" width="10" height="22" stroke="#a88a4f" stroke-width="0.4" fill="none"/>
+          <circle cx="60" cy="22" r="10" fill="#c9a96e" opacity="0.18"/>
+          <circle cx="60" cy="22" r="5" fill="#c9a96e" opacity="0.35"/>
+          <line x1="40" y1="58" x2="64" y2="58" stroke="#0d2340" stroke-width="0.5" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Kelengkapan Haji & Umrah</h3>
+        <p class="product-desc">Pelbagai keperluan haji dan umrah untuk membantu perjalanan ibadah anda dengan lebih selesa.</p>
+        <button class="product-cta">Terokai Kategori <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      </div>
+    </article>
+
+
+    <!-- 9. Beg & Aksesori Travel Umrah -->
+    <article class="product-card" data-product="Beg & Aksesori Travel Umrah" data-price="89">
+      <div class="product-image">
+        <div class="product-badge">Travel</div>
+        <div class="stock-badge stock-ready">Pelbagai Varian</div>
+        <img src="product-beg-travel.jpg" alt="Beg & Aksesori Travel Umrah" class="product-img" loading="lazy" onerror="this.style.display='none';">
+        <svg class="product-icon" viewBox="0 0 120 120" fill="none">
+          <defs><linearGradient id="btg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9a96e"/><stop offset="1" stop-color="#a88a4f"/></linearGradient></defs>
+          <rect x="28" y="46" width="64" height="54" rx="5" fill="url(#btg)"/>
+          <path d="M44 46 L44 36 Q44 24 60 24 Q76 24 76 36 L76 46" stroke="#fff" stroke-width="2" fill="none" opacity="0.7"/>
+          <rect x="22" y="44" width="76" height="12" rx="4" fill="#a88a4f" opacity="0.85"/>
+          <rect x="52" y="68" width="16" height="20" rx="3" fill="#fff" opacity="0.18"/>
+          <line x1="28" y1="58" x2="92" y2="58" stroke="#fff" stroke-width="0.6" opacity="0.35"/>
+          <line x1="28" y1="68" x2="92" y2="68" stroke="#fff" stroke-width="0.5" opacity="0.25"/>
+          <circle cx="44" cy="50" r="3" fill="#fff" opacity="0.3"/>
+          <circle cx="76" cy="50" r="3" fill="#fff" opacity="0.3"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Beg & Aksesori Travel Umrah</h3>
+        <p class="product-desc">Beg dan aksesori travel khas untuk ibadah Umrah — ringan, tahan lama dan praktikal untuk perjalanan jauh.</p>
+        <button class="product-cta">Terokai Kategori <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      </div>
+    </article>
+
+    <!-- 10. Wangian Attar -->
+    <article class="product-card" data-product="Wangian Attar" data-price="35">
+      <div class="product-image">
+        <div class="product-badge">Wangian</div>
+        <div class="stock-badge stock-ready">Pelbagai Varian</div>
+        <img src="product-wangian.jpg" alt="Wangian Attar" class="product-img" loading="lazy" onerror="this.style.display='none';">
+        <svg class="product-icon" viewBox="0 0 120 120" fill="none">
+          <defs><linearGradient id="wag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6cea0"/><stop offset="1" stop-color="#a88a4f"/></linearGradient></defs>
+          <rect x="46" y="52" width="28" height="50" rx="7" fill="url(#wag)"/>
+          <rect x="52" y="40" width="16" height="14" rx="3" fill="url(#wag)"/>
+          <rect x="55" y="30" width="10" height="12" rx="2" fill="#c9a96e"/>
+          <ellipse cx="60" cy="52" rx="14" ry="3" fill="#fff" opacity="0.2"/>
+          <path d="M46 72 Q60 66 74 72" stroke="#fff" stroke-width="0.8" fill="none" opacity="0.5"/>
+          <path d="M46 84 Q60 78 74 84" stroke="#fff" stroke-width="0.6" fill="none" opacity="0.35"/>
+          <path d="M50 24 Q46 16 52 12" stroke="#c9a96e" stroke-width="1.2" fill="none" opacity="0.55"/>
+          <path d="M60 22 Q60 14 62 10" stroke="#c9a96e" stroke-width="1.2" fill="none" opacity="0.45"/>
+          <path d="M70 24 Q74 16 68 12" stroke="#c9a96e" stroke-width="1.2" fill="none" opacity="0.55"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Wangian Attar</h3>
+        <p class="product-desc">Koleksi wangian attar premium bebas alkohol — aroma lembut dan tahan lama, sesuai dipakai setiap hari.</p>
+        <button class="product-cta">Terokai Kategori <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      </div>
+    </article>
+
+    <!-- 11. Inner & Anak Tudung -->
+    <article class="product-card" data-product="Inner & Anak Tudung" data-price="25">
+      <div class="product-image">
+        <div class="product-badge">Muslimah</div>
+        <div class="stock-badge stock-ready">Pelbagai Varian</div>
+        <img src="product-inner-tudung.jpg" alt="Inner & Anak Tudung" class="product-img" loading="lazy" onerror="this.style.display='none';">
+        <svg class="product-icon" viewBox="0 0 120 120" fill="none">
+          <defs><linearGradient id="itg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6cea0"/><stop offset="1" stop-color="#a88a4f"/></linearGradient></defs>
+          <path d="M60 16 C38 16 22 34 22 56 L22 106 L98 106 L98 56 C98 34 82 16 60 16 Z" fill="url(#itg)"/>
+          <ellipse cx="60" cy="50" rx="13" ry="16" fill="#fbf8f3"/>
+          <ellipse cx="60" cy="50" rx="14" ry="17" stroke="#fff" stroke-width="0.7" fill="none" opacity="0.5"/>
+          <line x1="22" y1="92" x2="98" y2="92" stroke="#fff" stroke-width="0.7" opacity="0.4"/>
+          <line x1="22" y1="100" x2="98" y2="100" stroke="#fff" stroke-width="0.5" opacity="0.25"/>
+          <circle cx="36" cy="76" r="1.5" fill="#fff" opacity="0.35"/>
+          <circle cx="84" cy="76" r="1.5" fill="#fff" opacity="0.35"/>
+          <circle cx="60" cy="80" r="1.5" fill="#fff" opacity="0.35"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Inner & Anak Tudung</h3>
+        <p class="product-desc">Inner tudung dan anak tudung berkualiti — selesa dipakai sepanjang hari untuk tampilan yang kemas dan anggun.</p>
+        <button class="product-cta">Terokai Kategori <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      </div>
+    </article>
+
+
+    <!-- 12. Semua Produk — expands the All Products panel -->
+    <article class="product-card product-card--all" id="allProductsCard"
+             role="button" tabindex="0" aria-expanded="false" aria-controls="allProductsPanel">
+      <div class="product-image">
+        <div class="product-badge">64 Produk</div>
+        <svg class="product-icon" viewBox="0 0 120 120" fill="none">
+          <defs>
+            <linearGradient id="allg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#a88a4f"/>
+              <stop offset="1" stop-color="#c9a96e"/>
+            </linearGradient>
+          </defs>
+          <!-- 3×3 mini tile grid representing all categories -->
+          <rect x="18" y="18" width="24" height="24" rx="4" fill="url(#allg)" opacity="0.9"/>
+          <rect x="48" y="18" width="24" height="24" rx="4" fill="url(#allg)" opacity="0.75"/>
+          <rect x="78" y="18" width="24" height="24" rx="4" fill="url(#allg)" opacity="0.6"/>
+          <rect x="18" y="48" width="24" height="24" rx="4" fill="url(#allg)" opacity="0.75"/>
+          <rect x="48" y="48" width="24" height="24" rx="4" fill="url(#allg)" opacity="1"/>
+          <rect x="78" y="48" width="24" height="24" rx="4" fill="url(#allg)" opacity="0.75"/>
+          <rect x="18" y="78" width="24" height="24" rx="4" fill="url(#allg)" opacity="0.6"/>
+          <rect x="48" y="78" width="24" height="24" rx="4" fill="url(#allg)" opacity="0.75"/>
+          <rect x="78" y="78" width="24" height="24" rx="4" fill="url(#allg)" opacity="0.9"/>
+          <!-- plus icon in centre tile -->
+          <line x1="55" y1="60" x2="65" y2="60" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="60" y1="55" x2="60" y2="65" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Semua Produk</h3>
+        <p class="product-desc">Terokai kesemua 64 produk dari 16 kategori — cari dan tapis mengikut nama atau bajet.</p>
+        <button class="product-cta">Lihat Semua Produk
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </article>
+
+  </div><!-- /.product-grid -->
+
+  <!-- panelCardPool is now empty — products are injected by ALL_PRODUCTS data in script.js -->
+  <div id="panelCardPool" style="display:none" aria-hidden="true"></div>
+
+  <!-- ===== ALL PRODUCTS PANEL ===== -->
+  <div id="allProductsPanel" class="all-products-panel" hidden aria-hidden="true">
+    <div class="all-products-inner">
+      <div class="all-products-header">
+        <h3 class="ap-title">Semua Produk &mdash; <span id="apCount">64</span> produk</h3>
+        <button id="closePanelBtn" class="close-panel-btn" aria-label="Tutup">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="all-products-toolbar">
+        <div class="search-input-wrap">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input type="text" id="apSearch" class="search-input" placeholder="Cari produk atau kategori…" autocomplete="off" aria-label="Cari produk">
+          <button class="search-clear" id="apClear" aria-label="Padam" style="display:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <div class="price-filter-wrap">
+          <span class="filter-label">Harga:</span>
+          <button class="price-pill" data-range="0-50">Bawah RM50</button>
+          <button class="price-pill" data-range="50-100">RM50–RM100</button>
+          <button class="price-pill" data-range="100+">RM100+</button>
+          <button class="price-pill price-pill--clear" id="apClearFilter" style="display:none;">× Semua</button>
+        </div>
+        <div class="price-filter-wrap" id="catFilterWrap" style="flex-wrap:wrap;">
+          <span class="filter-label">Kategori:</span>
+          <button class="price-pill cat-pill active" data-cat="">Semua</button>
+          <button class="price-pill cat-pill" data-cat="Kopiah & Headwear">Kopiah</button>
+          <button class="price-pill cat-pill" data-cat="Jubah">Jubah</button>
+          <button class="price-pill cat-pill" data-cat="Kain Pelikat">Pelikat</button>
+          <button class="price-pill cat-pill" data-cat="Tudung">Tudung</button>
+          <button class="price-pill cat-pill" data-cat="Set Solat">Set Solat</button>
+          <button class="price-pill cat-pill" data-cat="Baju Kedah">Baju Kedah</button>
+          <button class="price-pill cat-pill" data-cat="Baju Melayu dan Kurta">Baju Melayu</button>
+          <button class="price-pill cat-pill" data-cat="Kelengkapan Haji & Umrah">Haji & Umrah</button>
+          <button class="price-pill cat-pill" data-cat="Beg & Aksesori Travel Umrah">Beg Travel</button>
+          <button class="price-pill cat-pill" data-cat="Wangian Attar">Wangian</button>
+          <button class="price-pill cat-pill" data-cat="Inner & Anak Tudung">Inner Tudung</button>
+          <button class="price-pill cat-pill" data-cat="Barangan Muslim Harian">Barangan Harian</button>
+          <button class="price-pill cat-pill" data-cat="Gift Set Islamik">Gift Set</button>
+          <button class="price-pill cat-pill" data-cat="Aksesori Ibadah Essential">Aksesori Ibadah</button>
+          <button class="price-pill cat-pill" data-cat="Travel Muslim Lifestyle">Travel Muslim</button>
+          <button class="price-pill cat-pill" data-cat="Produk Muslim Seisi Keluarga">Keluarga</button>
+        </div>
+      </div>
+      <div id="allProductsGrid" class="product-grid all-products-grid"></div>
+      <p id="apNoResults" class="ap-no-results" hidden>Tiada produk yang sepadan dengan carian anda.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="SMB Ventures Sdn Bhd" class="logo-img"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <span class="logo-fallback" style="display:none;">
+          <span class="lf-main">s<em>m</em>b</span>
+          <span class="lf-tag">sepakat membawa berkat</span>
+          <span class="lf-sub">Ventures Sdn Bhd</span>
+        </span>
+      </a>
+      <p>Koleksi produk Muslim moden untuk gaya hidup harian anda.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigasi</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produk.html">Koleksi Produk</a></li>
+        <li><a href="tentang-kami.html">Tentang Kami</a></li>
+        <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+        <li><a href="#faq">Soalan Lazim</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hubungi</h4>
+      <ul>
+        <li><a href="https://wa.me/60139835152" target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.417.636 4.786 1.846 6.876L2 30l7.333-1.818A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.54 11.54 0 0 1-5.888-1.607l-.422-.252-4.352 1.08 1.1-4.24-.276-.435A11.56 11.56 0 0 1 4.4 16C4.4 9.59 9.59 4.4 16 4.4S27.6 9.59 27.6 16 22.41 27.6 16 27.6zm6.338-8.664c-.347-.174-2.056-1.014-2.375-1.13-.318-.115-.55-.173-.78.174-.23.347-.895 1.13-1.097 1.362-.202.23-.404.26-.75.086-.347-.174-1.464-.54-2.788-1.72-1.03-.918-1.726-2.053-1.928-2.4-.202-.347-.022-.534.152-.706.156-.155.347-.405.52-.607.174-.202.23-.347.347-.578.116-.23.058-.434-.029-.607-.087-.174-.78-1.88-1.07-2.573-.28-.676-.566-.584-.78-.595l-.665-.011c-.23 0-.607.086-.924.433-.318.347-1.213 1.186-1.213 2.892 0 1.706 1.242 3.355 1.415 3.585.174.23 2.445 3.73 5.923 5.232.828.357 1.474.57 1.977.73.83.265 1.587.228 2.184.138.666-.1 2.056-.84 2.345-1.652.29-.81.29-1.505.202-1.652-.087-.144-.318-.23-.665-.404z"/></svg>
+          WhatsApp: +60 13-983 5152
+        </a></li>
+        <li><a href="mailto:hello@smbventures.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          hello@smbventures.com
+        </a></li>
+        <li><a href="tel:+60139835152">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +60 13-983 5152
+        </a></li>
+        <li><a href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Jerantut, Pahang, Malaysia
+        </a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>&copy; 2026 SMB Ventures. All rights reserved.</div>
+    <div class="made-with">Dibina dengan penuh dedikasi <span>۞</span></div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOATING ============ -->
+<a href="https://wa.me/60139835152?text=Assalamualaikum%20SMB%20Ventures%2C%20saya%20berminat%20dengan%20produk%20anda."
+   class="whatsapp-float"
+   id="whatsappBtn"
+   target="_blank"
+   rel="noopener"
+   aria-label="Hubungi melalui WhatsApp">
+  <span class="whatsapp-tooltip">Hubungi kami</span>
+  <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.417.636 4.786 1.846 6.876L2 30l7.333-1.818A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.54 11.54 0 0 1-5.888-1.607l-.422-.252-4.352 1.08 1.1-4.24-.276-.435A11.56 11.56 0 0 1 4.4 16C4.4 9.59 9.59 4.4 16 4.4S27.6 9.59 27.6 16 22.41 27.6 16 27.6zm6.338-8.664c-.347-.174-2.056-1.014-2.375-1.13-.318-.115-.55-.173-.78.174-.23.347-.895 1.13-1.097 1.362-.202.23-.404.26-.75.086-.347-.174-1.464-.54-2.788-1.72-1.03-.918-1.726-2.053-1.928-2.4-.202-.347-.022-.534.152-.706.156-.155.347-.405.52-.607.174-.202.23-.347.347-.578.116-.23.058-.434-.029-.607-.087-.174-.78-1.88-1.07-2.573-.28-.676-.566-.584-.78-.595l-.665-.011c-.23 0-.607.086-.924.433-.318.347-1.213 1.186-1.213 2.892 0 1.706 1.242 3.355 1.415 3.585.174.23 2.445 3.73 5.923 5.232.828.357 1.474.57 1.977.73.83.265 1.587.228 2.184.138.666-.1 2.056-.84 2.345-1.652.29-.81.29-1.505.202-1.652-.087-.144-.318-.23-.665-.404z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>

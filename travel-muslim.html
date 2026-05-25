@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Travel Muslim Lifestyle — SMB Ventures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Diagonal Check Batik Background -->
+<svg class="batik-check-bg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="check-batik" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse" patternTransform="rotate(45 400 400)">
+      <line x1="40" y1="0" x2="40" y2="80" stroke="#c9a96e" stroke-width="0.6"/>
+      <line x1="0" y1="40" x2="80" y2="40" stroke="#c9a96e" stroke-width="0.6"/>
+      <circle cx="0"  cy="0"  r="2.5" fill="#c9a96e"/>
+      <circle cx="80" cy="0"  r="2.5" fill="#c9a96e"/>
+      <circle cx="0"  cy="80" r="2.5" fill="#c9a96e"/>
+      <circle cx="80" cy="80" r="2.5" fill="#c9a96e"/>
+      <circle cx="40" cy="40" r="6" fill="none" stroke="#c9a96e" stroke-width="0.7"/>
+      <circle cx="40" cy="40" r="3" fill="#c9a96e"/>
+      <line x1="34" y1="40" x2="46" y2="40" stroke="#e6cea0" stroke-width="0.5"/>
+      <line x1="40" y1="34" x2="40" y2="46" stroke="#e6cea0" stroke-width="0.5"/>
+      <polygon points="40,26 54,40 40,54 26,40" fill="none" stroke="#c9a96e" stroke-width="0.45" opacity="0.7"/>
+      <circle cx="40" cy="27" r="1.2" fill="#e6cea0" opacity="0.8"/>
+      <circle cx="53" cy="40" r="1.2" fill="#e6cea0" opacity="0.8"/>
+      <circle cx="40" cy="53" r="1.2" fill="#e6cea0" opacity="0.8"/>
+      <circle cx="27" cy="40" r="1.2" fill="#e6cea0" opacity="0.8"/>
+      <path d="M0 20 Q20 20 20 0"   fill="none" stroke="#a88a4f" stroke-width="0.4" opacity="0.6"/>
+      <path d="M60 0 Q60 20 80 20"  fill="none" stroke="#a88a4f" stroke-width="0.4" opacity="0.6"/>
+      <path d="M80 60 Q60 60 60 80" fill="none" stroke="#a88a4f" stroke-width="0.4" opacity="0.6"/>
+      <path d="M20 80 Q20 60 0 60"  fill="none" stroke="#a88a4f" stroke-width="0.4" opacity="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#check-batik)"/>
+</svg>
+
+<nav id="navbar">
+  <a href="index.html" class="logo">
+    <img src="logo.jpg" alt="SMB Ventures Sdn Bhd" class="logo-img"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+    <span class="logo-fallback" style="display:none;">
+      <span class="lf-main">s<em>m</em>b</span>
+      <span class="lf-tag">sepakat membawa berkat</span>
+      <span class="lf-sub">Ventures Sdn Bhd</span>
+    </span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="produk.html" class="active">Produk</a></li>
+    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+    <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+  </ul>
+  <a href="produk.html" class="nav-cta"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Beli Sekarang</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="produk.html">Produk</a></li>
+    <li><a href="tentang-kami.html">Tentang Kami</a></li>
+    <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+    <li><a href="produk.html" class="nav-cta"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> Beli Sekarang</a></li>
+  </ul>
+</div>
+
+<header class="page-header">
+  <a href="produk.html#koleksi-pilihan" class="back-link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    Kembali ke Koleksi
+  </a>
+  <div class="section-eyebrow">Travel Muslim Lifestyle</div>
+  <h1>Pilihan <em>Travel Muslim</em></h1>
+  <p>Praktikal untuk gaya hidup Muslim — sejadah travel lipat, botol wuduk dan kelengkapan perjalanan.</p>
+</header>
+
+<section aria-labelledby="variant-heading">
+  <h2 id="variant-heading" class="visually-hidden">Pilihan Varian Travel Muslim</h2>
+  <div class="variant-grid">
+
+    <article class="variant-card" data-product="Travel Muslim Lifestyle" data-variant="Sejadah Travel Lipat" data-price="RM 55">
+      <div class="variant-image">
+        <img src="travel-v1.jpg" alt="Sejadah Travel Lipat" class="variant-img" onerror="this.style.display='none';">
+      </div>
+      <div class="variant-info">
+        <h3 class="variant-name">Sejadah Travel Lipat</h3>
+        <p class="variant-desc">Sejadah lipat saiz poket — mudah disimpan dalam beg dan ringan dibawa.</p>
+        <div class="variant-price">RM 55</div>
+        <button class="variant-cta">Hubungi WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      </div>
+    </article>
+
+    <article class="variant-card" data-product="Travel Muslim Lifestyle" data-variant="Botol Wuduk Travel" data-price="RM 35">
+      <div class="variant-image">
+        <img src="travel-v2.jpg" alt="Botol Wuduk Travel" class="variant-img" onerror="this.style.display='none';">
+      </div>
+      <div class="variant-info">
+        <h3 class="variant-name">Botol Wuduk Travel</h3>
+        <p class="variant-desc">Botol khas untuk berwuduk dalam perjalanan — kemas dan menjimatkan air.</p>
+        <div class="variant-price">RM 35</div>
+        <button class="variant-cta">Hubungi WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      </div>
+    </article>
+
+    <article class="variant-card" data-product="Travel Muslim Lifestyle" data-variant="Penutup Telinga Solat" data-price="RM 25">
+      <div class="variant-image">
+        <img src="travel-v3.jpg" alt="Penutup Telinga Solat" class="variant-img" onerror="this.style.display='none';">
+      </div>
+      <div class="variant-info">
+        <h3 class="variant-name">Penutup Telinga Solat</h3>
+        <p class="variant-desc">Supaya tidak terdengar bunyi luar semasa solat di tempat awam.</p>
+        <div class="variant-price">RM 25</div>
+        <button class="variant-cta">Hubungi WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      </div>
+    </article>
+
+    <article class="variant-card" data-product="Travel Muslim Lifestyle" data-variant="Set Travel Premium" data-price="RM 165">
+      <div class="variant-image">
+        <img src="travel-v4.jpg" alt="Set Travel Premium" class="variant-img" onerror="this.style.display='none';">
+      </div>
+      <div class="variant-info">
+        <h3 class="variant-name">Set Travel Premium</h3>
+        <p class="variant-desc">Bundle lengkap untuk Muslim travel — sejadah, botol wuduk dan aksesori.</p>
+        <div class="variant-price">RM 165</div>
+        <button class="variant-cta">Hubungi WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <img src="logo.jpg" alt="SMB Ventures Sdn Bhd" class="logo-img"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <span class="logo-fallback" style="display:none;">
+          <span class="lf-main">s<em>m</em>b</span>
+          <span class="lf-tag">sepakat membawa berkat</span>
+          <span class="lf-sub">Ventures Sdn Bhd</span>
+        </span>
+      </a>
+      <p>Koleksi produk Muslim moden untuk gaya hidup harian anda.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigasi</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produk.html">Koleksi Produk</a></li>
+        <li><a href="tentang-kami.html">Tentang Kami</a></li>
+        <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+        <li><a href="hubungi-kami.html#faq">Soalan Lazim</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Hubungi</h4>
+      <ul>
+        <li><a href="https://wa.me/60139835152" target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.417.636 4.786 1.846 6.876L2 30l7.333-1.818A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.54 11.54 0 0 1-5.888-1.607l-.422-.252-4.352 1.08 1.1-4.24-.276-.435A11.56 11.56 0 0 1 4.4 16C4.4 9.59 9.59 4.4 16 4.4S27.6 9.59 27.6 16 22.41 27.6 16 27.6zm6.338-8.664c-.347-.174-2.056-1.014-2.375-1.13-.318-.115-.55-.173-.78.174-.23.347-.895 1.13-1.097 1.362-.202.23-.404.26-.75.086-.347-.174-1.464-.54-2.788-1.72-1.03-.918-1.726-2.053-1.928-2.4-.202-.347-.022-.534.152-.706.156-.155.347-.405.52-.607.174-.202.23-.347.347-.578.116-.23.058-.434-.029-.607-.087-.174-.78-1.88-1.07-2.573-.28-.676-.566-.584-.78-.595l-.665-.011c-.23 0-.607.086-.924.433-.318.347-1.213 1.186-1.213 2.892 0 1.706 1.242 3.355 1.415 3.585.174.23 2.445 3.73 5.923 5.232.828.357 1.474.57 1.977.73.83.265 1.587.228 2.184.138.666-.1 2.056-.84 2.345-1.652.29-.81.29-1.505.202-1.652-.087-.144-.318-.23-.665-.404z"/></svg>
+          WhatsApp: +60 13-983 5152
+        </a></li>
+        <li><a href="mailto:hello@smbventures.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          hello@smbventures.com
+        </a></li>
+        <li><a href="tel:+60139835152">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +60 13-983 5152
+        </a></li>
+        <li><a href="hubungi-kami.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Jerantut, Pahang, Malaysia
+        </a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>&copy; 2026 SMB Ventures. All rights reserved.</div>
+    <div class="made-with">Dibina dengan penuh dedikasi <span>۞</span></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/60139835152?text=Assalamualaikum%20SMB%20Ventures%2C%20saya%20berminat%20dengan%20produk%20anda."
+   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Hubungi melalui WhatsApp">
+  <span class="whatsapp-tooltip">Hubungi kami</span>
+  <svg viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.417.636 4.786 1.846 6.876L2 30l7.333-1.818A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.54 11.54 0 0 1-5.888-1.607l-.422-.252-4.352 1.08 1.1-4.24-.276-.435A11.56 11.56 0 0 1 4.4 16C4.4 9.59 9.59 4.4 16 4.4S27.6 9.59 27.6 16 22.41 27.6 16 27.6zm6.338-8.664c-.347-.174-2.056-1.014-2.375-1.13-.318-.115-.55-.173-.78.174-.23.347-.895 1.13-1.097 1.362-.202.23-.404.26-.75.086-.347-.174-1.464-.54-2.788-1.72-1.03-.918-1.726-2.053-1.928-2.4-.202-.347-.022-.534.152-.706.156-.155.347-.405.52-.607.174-.202.23-.347.347-.578.116-.23.058-.434-.029-.607-.087-.174-.78-1.88-1.07-2.573-.28-.676-.566-.584-.78-.595l-.665-.011c-.23 0-.607.086-.924.433-.318.347-1.213 1.186-1.213 2.892 0 1.706 1.242 3.355 1.415 3.585.174.23 2.445 3.73 5.923 5.232.828.357 1.474.57 1.977.73.83.265 1.587.228 2.184.138.666-.1 2.056-.84 2.345-1.652.29-.81.29-1.505.202-1.652-.087-.144-.318-.23-.665-.404z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
